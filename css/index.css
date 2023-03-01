@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #457eac;
+}
+
+#enlaces ul{
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Tilt Neon', cursive;
+    width: 90%;
+    height: auto90;
+    background: #2d5d7b;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+#enlaces li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+#enlaces li a {
+   display: inline-block; 
+   padding: 2px 7px 2px 7px;
+   color: #e0e0ce;
+   background-color: #457eac;
+   border: 1px solid #ccc;
+   text-decoration: none;
+   margin: 1% auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+#enlaces li a:hover{
+   background-color: #446c8d;
+   color: #ffffff;
+}
+
+.nombre {
+width: 100%;
+height: 300px;
+background: #2d5d7b;
+transform: skewY(-5deg)
+}
+
+.nombre .contenido {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;   
+}
+
+.nombre .contenido .p1 {
+    color: #e0e0ce;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 65px;
+    transform: skewY(5deg);
+    margin-bottom: 0;
+}
+
+.nombre .contenido .p2 {
+    color: #e0e0ce;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 20px;
+    transform: skewY(5deg);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nombre .foto {
+    position: absolute;
+    top: 18%;
+    right: 5%;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    transform: skewY(5deg);
+    overflow: hidden;
+}
+
+.nombre .foto img {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    width: 90%;
+    height: auto;
+    background: #2d5d7b;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.info .tituloSeccion {
+    color: #e0e0ce;
+    font-family: 'Tilt Warp', cursive;
+    font-size: xx-large;
+    text-align: center;
+    border-bottom: 2px #e0e0ce solid;
+}
+
+.info .subtituloSeccion {
+    color: #e0e0ce;
+    font-family: 'Tilt Warp', cursive;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+.info .informacion {
+    color: #e0e0ce;
+    font-family: 'Tilt Neon', cursive;
+    font-size: large;
+    display: inline;
+}
+
+.accordion {
+    background-color: #457eac;
+    color: #e0e0ce;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: 'Tilt Warp', cursive;
+    font-size: xx-large;
+    transition: 0.4s;
+    margin: 1% auto;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #446c8d;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #2d5d7b;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #457eac;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin: 1% auto;
+    border-radius: 20px;
+  }

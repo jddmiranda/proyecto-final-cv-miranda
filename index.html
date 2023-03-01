@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final Integrador jddmiranda</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.jpg">
+</head>
+<body>
+    <div class="nombre">
+        <div class="foto">
+            <img src="https://randomuser.me/api/portraits/men/67.jpg">
+        </div>
+        <div class="contenido">
+            <p class="p1">Robert García</p>
+            <p class="p2">27 años, Licenciado en Administración</p>
+        </div>
+    </div>
+
+    <div id="enlaces">
+        <ul>
+        <li><a href="#informacion-personal">Información Personal</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#otros">Otros Conocimientos</a></li>
+        </ul>
+        </div>
+
+    <div class="info">
+        <a name="informacion-personal"></a>
+        <p class="tituloSeccion">Información Personal</p>
+        <p class="subtituloSeccion">Nombre y Apellido:</p>
+        <p class="informacion">Robert García</p><br>
+        <p class="subtituloSeccion">Fecha de Nacimiento:</p>
+        <p class="informacion">05/02/1996</p><br>
+        <p class="subtituloSeccion">Dirección:</p>
+        <p class="informacion">Avenida Siempre Viva 1234, Springfield, Argentina</p><br>
+        <p class="subtituloSeccion">D.N.I.:</p>
+        <p class="informacion">78.383.838</p><br>
+        <p class="subtituloSeccion">E-mail:</p>
+        <p class="informacion">rgarcía@garcia.com</p><br>
+        <p class="subtituloSeccion">Teléfono de contacto:</p>
+        <p class="informacion">11-0303-456</p><br>
+
+    </div>
+
+    <div class="info">
+        <a name="experiencia"></a>
+        <p class="tituloSeccion">Experiencia</p>
+        <p class="subtituloSeccion">2020-2022:</p>
+        <p class="informacion">Liquidador de Impuestos en "S&S company"</p><br>
+        <p class="subtituloSeccion">2018-2019:</p>
+        <p class="informacion">Asistente contable en "Udson enterprises"</p><br>
+        <p class="subtituloSeccion">2017:</p>
+        <p class="informacion">Pasante en la Universidad de Springfield</p><br>
+
+    </div>
+
+    <div class="info">
+        <a name="habilidades"></a>
+        <p class="tituloSeccion">Habilidades</p>
+        <p class="subtituloSeccion">Informáticas:</p><br>
+        <p class="informacion">Avanzado en Microsoft Excel y Microsoft Word</p><br>
+        <p class="informacion">Desarrollo Web - Nivel inicial</p><br>
+        <p class="informacion">HTML, CSS y JavaScript - Nivel inicial</p><br>
+        <p class="subtituloSeccion">Idioma:</p><br>
+        <p class="informacion">Inglés - Lectocomprensión avanzada</p><br>
+        <p class="informacion">Inglés - Conversación intermedia</p><br>
+
+    </div>
+
+    <div class="info">
+        <a name="otros"></a>
+        <button class="accordion">Otros Conocimientos</button>
+            <div class="panel">
+        <p class="subtituloSeccion">Estudios en música:</p>
+        <p class="informacion">Concertista de guitarra clásica, pianista aficionado y compositor modesto</p>
+            </div>
+    </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
